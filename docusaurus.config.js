@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'Junjie',
+    title: 'wiki',
     tagline: 'Front-end Web Developer',
-    url: 'https://junjieweb.github.io',
+    url: 'https://wiki.wangbin.run',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -82,7 +82,7 @@ const config = {
             },
             // image: 'img/docusaurus-soc.png',
             navbar: {
-                title: 'Junjie',
+                title: 'wiki',
                 logo: {
                     alt: 'My Site Logo',
                     src: 'img/logo.svg',
@@ -95,7 +95,7 @@ const config = {
                         type: 'doc',
                         docId: 'MDN',
                         position: 'left',
-                        label: '📒前端笔记',
+                        label: '📒笔记',
                     },
                     {
                         type: 'docSidebar',
