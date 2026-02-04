@@ -180,7 +180,7 @@ const config = {
                     },
                 ],
 
-                copyright: `Copyright © ${new Date().getFullYear()} junjieweb. Built with Docusaurus.`,
+                copyright: `Copyright © ${new Date().getFullYear()} wiki.wangbin.run. Built with Docusaurus.`,
             },
             prism: {
                 theme: lightCodeTheme,
