@@ -3,7 +3,12 @@ sidebar_position: 1
 ---
 # 一、docker工具
 
-## 001 - CSS选择器及优先级
+## Alist
+
+
+购买的电脑版
+
+![Alist](./img/alist.png)
 
 #### 选择器
 
