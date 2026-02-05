@@ -1,32 +1,33 @@
 ---
 sidebar_position: 1
 ---
+# 一、docker工具
 
-# 一、CSS基础
+## Alist
 
-## 001 - CSS选择器及优先级
+购买的电脑版
+
+![specifishity](./img/specifishity.png)
 
 #### 选择器
 
 - 基础选择器
 
-    - 通配符选择器
-    - 标签选择器/元素选择器
-    - 类选择器
-    - id选择器
-
+  - 通配符选择器
+  - 标签选择器/元素选择器
+  - 类选择器
+  - id选择器
 - 复合选择器
 
-    - 后代选择器
-    - 子代选择器
-    - 并集选择器
-    - 伪类选择器
-
+  - 后代选择器
+  - 子代选择器
+  - 并集选择器
+  - 伪类选择器
 - 新增选择器
 
-    - 属性选择器
-    - 结构伪类选择器
-    - 伪元素选择器
+  - 属性选择器
+  - 结构伪类选择器
+  - 伪元素选择器
 
 #### 优先级
 
@@ -96,32 +97,28 @@ sidebar_position: 1
 
 - 字体系列属性
 
-    - font-family
-    - font-size
-    - font-weight（normal、bold）
-    - font-style（normal、italic）
-
+  - font-family
+  - font-size
+  - font-weight（normal、bold）
+  - font-style（normal、italic）
 - 文本系列属性
 
-    - text-align：文本水平对齐
-    - text-indent：文本缩进
-    - line-height：行高
-    - word-spacing：单词之间的间距
-    - letter-spacing：中文或者字母之间的间距
-    - text-transform：控制文本大小写（就是uppercase、lowercase、capitalize这三个）
-    - color：文本颜色
-
+  - text-align：文本水平对齐
+  - text-indent：文本缩进
+  - line-height：行高
+  - word-spacing：单词之间的间距
+  - letter-spacing：中文或者字母之间的间距
+  - text-transform：控制文本大小写（就是uppercase、lowercase、capitalize这三个）
+  - color：文本颜色
 - 元素可见性
 
-    - visibility：控制元素显示隐藏
-
+  - visibility：控制元素显示隐藏
 - 列表布局属性
 
-    - list-style：列表风格，包括list-style-type、list-style-image等
-
+  - list-style：列表风格，包括list-style-type、list-style-image等
 - 光标属性
 
-    - cursor：光标显示为何种形态
+  - cursor：光标显示为何种形态
 
 ## 003 - `display`的属性值及其作用
 
@@ -133,7 +130,7 @@ sidebar_position: 1
 - table：此元素会作为块级表格来显示。
 - inherit：规定应该从父元素继承display属性的值。
 
-## 004 - `display`的`block`、`inline`和`inline-block`的区别
+## 004 - `display`的 `block`、`inline`和 `inline-block`的区别
 
 #### `block`：块级元素类型
 
@@ -154,44 +151,36 @@ sidebar_position: 1
 ## 004 - 隐藏元素的方法有哪些
 
 - `display：none` 渲染树不会包含该渲染对象，因此该元素不会在页面中占据位置
-
 - `visibility：hidden` 元素在页面中仍占据空间
-
 - `opacity: 0` 将元素的透明度设置为 0，以此来实现元素的隐藏。元素在页面中仍然占据空间
-
 - `position: absolute` 通过使用绝对定位将元素移除可视区域内，以此来实现元素的隐藏。
-
 - `z-index: 负值` 来使其他元素遮盖住该元素，以此来实现隐藏。
-
 - `clip/clip-path` 使用元素裁剪的方法来实现元素的隐藏，这种方法下，元素仍在页面中占据位置
-
 - `transform: scale(0,0)` 将元素缩放为 0，来实现元素的隐藏。这种方法下，元素仍在页面中占据位置
 
-## 005 - `display:none`与`visibility:hidden`的区别
+## 005 - `display:none`与 `visibility:hidden`的区别
 
 这两个属性都是让元素隐藏，不可见。两者区别如下：
 
 1. **在渲染树中**
 
-    - `display:none` 会让元素完全从渲染树中消失，渲染时不会占据任何空间；
-    - `visibility:hidden` 不会让元素从渲染树中消失，渲染的元素还会占据相应的空间，只是内容不可见。
-
+   - `display:none` 会让元素完全从渲染树中消失，渲染时不会占据任何空间；
+   - `visibility:hidden` 不会让元素从渲染树中消失，渲染的元素还会占据相应的空间，只是内容不可见。
 2. **是否是继承属性**
 
-    - `display:none`是非继承属性，子孙节点会随着父节点从渲染树消失，通过修改子孙节点的属性也无法显示；
-    - `visibility:hidden`是继承属性，子孙节点消失是由于继承了hidden，通过设置visibility:visible可以让子孙节点显示；
-
+   - `display:none`是非继承属性，子孙节点会随着父节点从渲染树消失，通过修改子孙节点的属性也无法显示；
+   - `visibility:hidden`是继承属性，子孙节点消失是由于继承了hidden，通过设置visibility:visible可以让子孙节点显示；
 3. 修改常规文档流中元素的 `display` 通常会造成文档的重排，但是修改 `visibility` 属性只会造成本元素的重绘；
 4. 如果使用读屏器，设置为 `display:none` 的内容不会被读取，设置为 `visibility:hidden` 的内容会被读取。
 
-## 006 - `link`和`@import`的区别
+## 006 - `link`和 `@import`的区别
 
 两者都是外部引用CSS的方式，它们的区别如下：
 
 - `link`是XHTML标签，除了加载CSS外，还可以定义RSS等其他事务，`@import`属于CSS范畴，只能加载CSS。
 - `link`引用CSS时，在页面载入时同时加载，`@import`需要页面网页完全载入以后加载。
 - `link`是XHTML标签，无兼容问题，`@import`是在CSS2.1提出的，低版本的浏览器不支持。
-- `link`支持使用Javascript控制DOM去改变样式，而`@import`不支持。
+- `link`支持使用Javascript控制DOM去改变样式，而 `@import`不支持。
 
 ## 007 - 伪元素和伪类的区别和作用
 
@@ -249,9 +238,9 @@ sidebar_position: 1
 - 位移：`transform：translate（100px，100px，100px）`
 - 旋转：`transform：rotate（0，0，1，45deg）`
 - 3D呈现：`transform-style`
-    - `flat`：子元素不开启3d空间
-    - `preserve-3d`：子元素开启3d空间
 
+  - `flat`：子元素不开启3d空间
+  - `preserve-3d`：子元素开启3d空间
 - 透视：`perspective`（单位px），人的眼睛到屏幕的距离；近大远小。
 
 **动画** `@keyframes 动画名称 {0% {width：100px} 100% {width：200px}}`
@@ -372,14 +361,14 @@ GPU 图层，但改变绝对定位会使⽤到 CPU。 因此translate()更⾼效
 
 ## 020 - li 与 li 之间有看不见的空白间隔是什么原因引起的？如何解决？
 
-**原因**：浏览器会把inline内联元素间的空白字符（空格、换行、Tab等）渲染成一个空格。为了美观，通常是一个`<li>`放在一行，这导致`<li>`换行后产生换行字符，它变成一个空格，占用了一个字符的宽度。
+**原因**：浏览器会把inline内联元素间的空白字符（空格、换行、Tab等）渲染成一个空格。为了美观，通常是一个 `<li>`放在一行，这导致 `<li>`换行后产生换行字符，它变成一个空格，占用了一个字符的宽度。
 
 **解决办法**
 
-1. 为`<li>`设置`float:left`。不足：有些容器是不能设置浮动，如左右切换的焦点图等。
-2. 将所有`<li>`写在同一行。不足：代码不美观。
-3. 将`<ul>`内的字符尺寸直接设为0，即`font-size:0`。不足：`<ul>`中的其他字符尺寸也被设为0，需要额外重新设定其他字符尺寸，且在Safari浏览器依然会出现空白间隔。
-4. 消除`<ul>`的字符间隔`letter-spacing:-8px`，不足：这也设置了`<li>`内的字符间隔，因此需要将`<li>`内的字符间隔设为默认`letter-spacing:normal`。
+1. 为 `<li>`设置 `float:left`。不足：有些容器是不能设置浮动，如左右切换的焦点图等。
+2. 将所有 `<li>`写在同一行。不足：代码不美观。
+3. 将 `<ul>`内的字符尺寸直接设为0，即 `font-size:0`。不足：`<ul>`中的其他字符尺寸也被设为0，需要额外重新设定其他字符尺寸，且在Safari浏览器依然会出现空白间隔。
+4. 消除 `<ul>`的字符间隔 `letter-spacing:-8px`，不足：这也设置了 `<li>`内的字符间隔，因此需要将 `<li>`内的字符间隔设为默认 `letter-spacing:normal`。
 
 ## 021 - 什么是物理像素，逻辑像素和像素密度，为什么在移动端开发时需要用到@3x, @2x这种图片？
 
@@ -395,11 +384,11 @@ GPU 图层，但改变绝对定位会使⽤到 CPU。 因此translate()更⾼效
 
 ## 022 - `margin` 和 `padding` 的使用场景
 
-需要在`border`外侧添加空白，使用 `margin`
+需要在 `border`外侧添加空白，使用 `margin`
 
-需要在`border`内测添加空白，使用 `padding`
+需要在 `border`内测添加空白，使用 `padding`
 
-## 021 - 对`line-height` 的理解及其赋值方式
+## 021 - 对 `line-height` 的理解及其赋值方式
 
 **`line-height`的概念：**
 
@@ -492,9 +481,7 @@ GPU 图层，但改变绝对定位会使⽤到 CPU。 因此translate()更⾼效
 有多不爽。随着前端业务复杂度的提高，前端工程中对 CSS 提出了以下的诉求：
 
 1. 宏观设计上：我们希望能优化 CSS 文件的目录结构，对现有的 CSS 文件实现复用；
-
 2. 编码优化上：我们希望能写出结构清晰、简明易懂的 CSS，需要它具有一目了然的嵌套层级关系，而不是无差别的一铺到底写法；我们希望它具有变量特征、计算能力、循环能力等等更强的可编程性，这样我们可以少写一些无用的代码；
-
 3. 可维护性上：更强的可编程性意味着更优质的代码结构，实现复用意味着更简单的目录结构和更强的拓展能力，这两点如果能做到，自然会带来更强的可维护性。
 
 这三点是传统 CSS 所做不到的，也正是预处理器所解决掉的问题。预处理器普遍会具备这样的特性：
@@ -524,7 +511,6 @@ PostCss 在业务中的使用场景非常多：
 **Webpack 能处理 CSS 吗？**
 
 - Webpack 在裸奔的状态下，是不能处理 CSS 的，Webpack 本身是一个面向 JavaScript 且只能处理 JavaScript 代码的模块化打包工具；
-
 - Webpack 在 loader 的辅助下，是可以处理 CSS 的。
 
 **如何用 Webpack 实现对 CSS 的处理？**
@@ -538,4 +524,3 @@ Webpack 中操作 CSS 需要使用的两个关键的 `loader`：`css-loader` 和
 > `style-loader`：创建style标签，把 CSS 内容写入标签。
 
 在实际使用中，css-loader 的执行顺序一定要安排在 style-loader 的前面。因为只有完成了编译过程，才可以对 css 代码进行插入；若提前插入了未编译的代码，那么 webpack 是无法理解这坨东西的，它会无情报错。
-
