@@ -101,7 +101,7 @@ const config = {
                         type: 'docSidebar',
                         position: 'left',
                         sidebarId: 'interview',
-                        label: '👨‍💻前端面试题',
+                        label: '👨‍💻工具',
                     },
                     {
                         type: 'docSidebar',
