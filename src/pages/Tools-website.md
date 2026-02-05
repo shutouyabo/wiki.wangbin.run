@@ -3,19 +3,15 @@
 ---
 
 ## 我的收藏
+
 [**Notion网站链接**](https://dz303241.notion.site/wangzhan/)
 &nbsp;&nbsp;&nbsp;&nbsp;
-
 
 ## 学习网站
 
 [**Markdown 官方教程**](https://markdown.com.cn/)
 &nbsp;&nbsp;&nbsp;&nbsp;
-[**学习开发路线图**](https://roadmap.sh)
-&nbsp;&nbsp;&nbsp;&nbsp;
 [**ES6 入门教程**](https://es6.ruanyifeng.com/)
-&nbsp;&nbsp;&nbsp;&nbsp;
-[**Source Academy**](https://sourceacademy.org/sicpjs/index)
 
 [**百度前端技术学园**](http://ife.baidu.com/)
 &nbsp;&nbsp;&nbsp;&nbsp;
